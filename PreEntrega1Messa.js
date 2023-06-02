@@ -17,13 +17,25 @@ do {
         case 1:
             console.log(`Asesorías`)
             let asesorias = parseInt(prompt(`ingrese el ítem de su interés:
-            1- Nutrición y Salud
-            2- Hábitos Saludables
-            3- Transisión al Veganismo`))
+            1- Nutrición y Salud (precio $5000)
+            2- Hábitos Saludables (precio $5000)
+            3- Transisión al Veganismo (precio $5000)`))
             switch (asesorias) {
                 case 1:
-                    console.log(`FELICIDADES!!! Usted ha comprado la asesoría en Nutrición y Salud`)
-                    prompt(`Ingrese su email para recibir el material`)
+                    console.log(`FELICIDADES!!! Usted está a punto de comprar la asesoría en Nutrición y Salud`)
+                    let pagos = parseInt(prompt(`Ingrese forma de pago:
+                    1- Transferencia Bancaria con un 10% de descuento
+                    2- Tarjeta de Crédito`))
+                    switch(pagos){
+                        case 1:
+                        console.log(`El monto a pagar es: (falta función para calcular valor) $`)
+                        break
+                        case 2:
+                        console.log(`El monto a pagar es:(falta función para calcular valor) $`)
+                        default:
+                            prompt(`FELICITACIONES POR SU COMPRA!, presione ENTER para volver al menú inicial`)
+                            break;
+                    }
                     break
                 case 2:
                     console.log(`FELICIDADES!!! Usted ha comprado la asesoría en Hábitos Saludables`)
@@ -34,16 +46,16 @@ do {
                     prompt(`Ingrese su email para recibir el material`)
                     break
                 default:
-                    prompt(`${entrada} no es una opción válida, presione ENTER para volver al menú inicial`)
+                    prompt(`${asesorias} no es una opción válida, presione ENTER para volver al menú inicial`)
                     break;
             }
             break;
         case 2:
             console.log(`Cursos`)
             let cursos = parseInt(prompt(`ingrese el ítem de su interés:
-            1- Aprendé a cocinar
-            2- Recetas Saludables
-            3- Bases de la Nutrición`))
+            1- Aprendé a cocinar (precio $5000)
+            2- Recetas Saludables (precio $5000)
+            3- Bases de la Nutrición (precio $5000)`))
             switch (cursos) {
                 case 1:
                     console.log(`FELICIDADES!!! Usted ha comprado el curso de  Aprendé a cocinar`)
@@ -58,7 +70,7 @@ do {
                     prompt(`Ingrese su email para recibir el material`)
                     break
                 default:
-                    prompt(`${entrada} no es una opción válida, presione ENTER para volver al menú inicial`)
+                    prompt(`${cursos} no es una opción válida, presione ENTER para volver al menú inicial`)
                     break;
             }       
             break;
