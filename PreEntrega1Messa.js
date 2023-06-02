@@ -7,22 +7,66 @@
 //El proyecto está en mi repositorio de Github.
 //https://github.com/Pmessa/entrega-final-pablo-messa.git
 
-let entrada = prompt ("ingrese 1 para asesorías o 2 para Cursos ingrese 0 para salir del menú");
-while (entrada !="0") {
-    //Repetimos hasta que se ingresa "ESC"
-        switch(entrada){
-            case "1":
-                console.log(`Asesorías`)
-                if (entrada ==1){
-                   prompt("elija una opción de asesoría")
-                }
-               break;
-            case "2":
-                console.log(`Cursos`)
-                break;
-            default :
-                console.log(`${entrada} no es una opción válida`)
-                break;
+let salirMenu = false
+do {
+    let entrada = parseInt(prompt(`Seleccione la opción deseada:
+    1- Asesorías
+    2- Cursos
+    0- Salir del menú`))
+    switch (entrada) {
+        case 1:
+            console.log(`Asesorías`)
+            let asesorias = parseInt(prompt(`ingrese el ítem de su interés:
+            1- Nutrición y Salud
+            2- Hábitos Saludables
+            3- Transisión al Veganismo`))
+            switch (asesorias) {
+                case 1:
+                    console.log(`FELICIDADES!!! Usted ha comprado la asesoría en Nutrición y Salud`)
+                    prompt(`Ingrese su email para recibir el material`)
+                    break
+                case 2:
+                    console.log(`FELICIDADES!!! Usted ha comprado la asesoría en Hábitos Saludables`)
+                    prompt(`Ingrese su email para recibir el material`)
+                    break
+                case 3:
+                    console.log(`FELICIDADES!!! Usted ha comprado la asesoría en Transisión al Veganismo`)
+                    prompt(`Ingrese su email para recibir el material`)
+                    break
+                default:
+                    prompt(`${entrada} no es una opción válida, presione ENTER para volver al menú inicial`)
+                    break;
             }
-            entrada = prompt("Ingrese un número válido")
-}
+            break;
+        case 2:
+            console.log(`Cursos`)
+            let cursos = parseInt(prompt(`ingrese el ítem de su interés:
+            1- Aprendé a cocinar
+            2- Recetas Saludables
+            3- Bases de la Nutrición`))
+            switch (cursos) {
+                case 1:
+                    console.log(`FELICIDADES!!! Usted ha comprado el curso de  Aprendé a cocinar`)
+                    prompt(`Ingrese su email para recibir el material`)
+                    break
+                case 2:
+                    console.log(`FELICIDADES!!! Usted ha comprado el curso de Recetas Saludables`)
+                    prompt(`Ingrese su email para recibir el material`)
+                    break
+                case 3:
+                    console.log(`FELICIDADES!!! Usted ha comprado el curso de Bases de la Nutrición`)
+                    prompt(`Ingrese su email para recibir el material`)
+                    break
+                default:
+                    prompt(`${entrada} no es una opción válida, presione ENTER para volver al menú inicial`)
+                    break;
+            }       
+            break;
+        case 0:
+            salirMenu = true
+            break
+        default:
+            prompt(`${entrada} no es una opción válida, presione ENTER para volver al menú inicial`)
+            break;
+    }
+} while (!salirMenu) 
