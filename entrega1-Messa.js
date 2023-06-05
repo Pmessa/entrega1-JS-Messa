@@ -49,11 +49,10 @@ let opcionValidada = validarEntrada(tipoBici)
             2 - Tarjeta de crédito (Precio de lista)`))
             console.log(mtb)
             if (roja == 1){
-               precio = prompt(`El monto a abonar es de $: 
-               ${mtbRoja * 0.9}`)
+               precio = prompt(`El monto a abonar es de $${mtbRoja * 0.9}`)
             }
             else if(roja == 2){
-                prompt(`Encuentre en su casilla de correo el cupón para pagar el monto de $ ``${mtbRoja}`)
+                prompt(`Encuentre en su casilla de correo el cupón para pagar el monto de $``${mtbRoja}`)
             }
             break
             case "2":alert((`Usted ha seleccionado la MTB verde de $100.000- 
@@ -87,35 +86,6 @@ let opcionValidada = validarEntrada(tipoBici)
         1 - Efectivo (10% de descuento)`))
     } 
     
-    
-
-     
-//     switch(mtb) {
-//         case "1":100.000
-//         break;
-//         case "2":200.000
-//         break;
-//         case "3":300.000
-//         break
-        
-//     }
-//     mtb = prompt(`Seleccione su bici MTB
-//     1-Roja $100.000-
-//     2-Verde $200.000-
-//     3-Azul $300.000-`)
-//     }
-//     if (opcion == 2) {
-//         let ruta = prompt(`Seleccione su bici de RUTA
-//     1-Blanca $120.000-
-//     2-Gris $250.000-
-//     3-Negra $360.000-`)
-//     }
-// let = roja(100.000)
-// let = verde(200.000)
-// let = azul(300.000)
-// let = Blanca(120.000)
-// let = Gris(250.000)
-// let = Negra(360.000)
 
 
 
