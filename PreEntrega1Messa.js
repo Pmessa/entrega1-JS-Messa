@@ -1,11 +1,22 @@
 //Primera Entrega Pablo Messa
 
-//En la entrega final del curso de desarrollo web realice una página a la que debería darle funcionalidad
+function pagos(){
+    console.log(`FELICIDADES!!! Usted está a punto de comprar la asesoría en Nutrición y Salud`)
+    let pagos = parseInt(prompt(`Ingrese forma de pago:
+    1- Transferencia Bancaria con un 10% de descuento
+    2- Tarjeta de Crédito`))
+    switch(pagos){
+        case 1:
+        console.log(`El monto a pagar es: (falta función para calcular valor) $`)
+        break
+        case 2:
+        console.log(`El monto a pagar es:(falta función para calcular valor) $`)
+        default:
+            prompt(`FELICITACIONES POR SU COMPRA!, presione ENTER para volver al menú inicial`)
+            break;
+    }
 
-//La idea es que los usuarios puedan elegir y agregar al carrito(que todavía no existe), los productos disponibles que tampoco existen aún.
-
-//El proyecto está en mi repositorio de Github.
-//https://github.com/Pmessa/entrega-final-pablo-messa.git
+}
 
 let salirMenu = false
 do {
@@ -22,20 +33,21 @@ do {
             3- Transisión al Veganismo (precio $5000)`))
             switch (asesorias) {
                 case 1:
-                    console.log(`FELICIDADES!!! Usted está a punto de comprar la asesoría en Nutrición y Salud`)
-                    let pagos = parseInt(prompt(`Ingrese forma de pago:
-                    1- Transferencia Bancaria con un 10% de descuento
-                    2- Tarjeta de Crédito`))
-                    switch(pagos){
-                        case 1:
-                        console.log(`El monto a pagar es: (falta función para calcular valor) $`)
-                        break
-                        case 2:
-                        console.log(`El monto a pagar es:(falta función para calcular valor) $`)
-                        default:
-                            prompt(`FELICITACIONES POR SU COMPRA!, presione ENTER para volver al menú inicial`)
-                            break;
-                    }
+                    pagos()
+                    // console.log(`FELICIDADES!!! Usted está a punto de comprar la asesoría en Nutrición y Salud`)
+                    // let pagos = parseInt(prompt(`Ingrese forma de pago:
+                    // 1- Transferencia Bancaria con un 10% de descuento
+                    // 2- Tarjeta de Crédito`))
+                    // switch(pagos){
+                    //     case 1:
+                    //     console.log(`El monto a pagar es: (falta función para calcular valor) $`)
+                    //     break
+                    //     case 2:
+                    //     console.log(`El monto a pagar es:(falta función para calcular valor) $`)
+                    //     default:
+                    //         prompt(`FELICITACIONES POR SU COMPRA!, presione ENTER para volver al menú inicial`)
+                    //         break;
+                    // }
                     break
                 case 2:
                     console.log(`FELICIDADES!!! Usted ha comprado la asesoría en Hábitos Saludables`)
