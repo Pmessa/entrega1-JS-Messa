@@ -19,7 +19,7 @@ SELECCIONE LA OPCIÓN DESEADA.
 2- RUTA
 3- Salir del menú`)
 
-while (tipoBici < 1 || tipoBici > 3) {
+while (tipoBici < 1 && tipoBici > 3) {
     alert("La opción ingresada no es válida")
     tipoBici = parseInt(prompt(`Ingrese el número de la opción deseada:
          1- MTB
@@ -55,7 +55,7 @@ if (opcionValidada == 1) {
                 precio = alert(`El monto a abonar es de $${mtbVerde * 0.9}`)
             }
             else if (verde == 2) {
-                precio = alert(`El costo de su MTB Roja es de 12 cuotas de  $${(mtbVerde * 1.5) / 12}`)
+                precio = alert(`El costo de su MTB Verde es de 12 cuotas de  $${(mtbVerde * 1.5) / 12}`)
             }
             break
         case 3: alert((`Usted ha seleccionado la MTB Azul de $300.000- 
@@ -67,17 +67,16 @@ if (opcionValidada == 1) {
                 precio = alert(`El monto a abonar es de $${mtbAzul * 0.9}`)
             }
             else if (azul == 2) {
-                precio = alert(`El costo de su MTB Roja es de 12 cuotas de  $${(mtbAzul * 1.5) / 12}`)
+                precio = alert(`El costo de su MTB Azul es de 12 cuotas de  $${(mtbAzul * 1.5) / 12}`)
             }
             break
     }
 }
 else if (opcionValidada == 2) {
-    let ruta = prompt(`Seleccione su bici de RUTA
+    let ruta = parseInt(prompt(`Seleccione su bici de RUTA
         1-Blanca $120.000-
         2-Gris $250.000-
-        3-Negra $360.000-`)
-
+        3-Negra $360.000-`))
     switch (ruta) {
         case 1: alert((`Usted ha seleccionado la bicicleta de ruta blanca de $120.000- 
                 Presione "Enter" para continuar`))
@@ -88,11 +87,11 @@ else if (opcionValidada == 2) {
                 precio = alert(`El monto a abonar es de $${rutaBlanca * 0.9}`)
             }
             else if (blanca == 2) {
-                precio = alert(`El costo de su MTB Roja es de 12 cuotas de  $${(rutaBlanca * 1.5) / 12}`)
+                precio = alert(`El costo de bicicleta de ruta blanca es de 12 cuotas de  $${(rutaBlanca * 1.5) / 12}`)
             }
             break
-        case 2: alert((`Usted ha seleccionado la bicicleta de ruta gris de $250.000- 
-                Presione "Enter" para continuar`))
+        case 2: alert(`Usted ha seleccionado la bicicleta de ruta gris de $250.000- 
+                Presione "Enter" para continuar`)
             gris = parseInt(prompt(`Ingrese forma de pago
                 1 - Efectivo (10% de descuento)
                 2 - 12 Cuotas con Tarjeta de crédito (Precio de lista + 50%)`))
@@ -100,10 +99,10 @@ else if (opcionValidada == 2) {
                 precio = alert(`El monto a abonar es de $${rutaGris * 0.9}`)
             }
             else if (gris == 2) {
-                precio = alert(`El costo de su MTB Roja es de 12 cuotas de  $${(rutaGris * 1.5) / 12}`)
+                precio = alert(`El costo de su bicicleta de ruta gris es de 12 cuotas de $${(rutaGris * 1.5) / 12}`)
             }
             break
-        case 3: alert((`Usted ha seleccionado la MTB Azul de $300.000- 
+        case 3: alert((`Usted ha seleccionado la bicicleta de ruta negra de $360.000- 
                 Presione "Enter" para continuar`))
             negra = parseInt(prompt(`Ingrese forma de pago
                 1 - Efectivo (10% de descuento)
