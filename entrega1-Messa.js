@@ -6,7 +6,30 @@ function validarEntrada(opcion) {
         opcion = parseInt(prompt("ATENCIÓN INGRESE EL VALOR NUEVAMENTE 1- MTB 2- RUTA 3- Salir del menú"))
     } return opcion
 }
+const biciMtb =[
 let mtbRoja = (100000)
+const bicimtbRoja = {
+    tipo:"mtb",
+    color:"rojo",
+    precio:100000,
+    rodado:29,
+    talle:"m"
+}
+const bicimtbVerde = {
+    tipo:"mtb",
+    color:"verde",
+    precio:200000,
+    rodado:29,
+    talle:"m"
+}
+const bicimtbAzul = {
+    tipo:"mtb",
+    color:"Azul",
+    precio:300000,
+    rodado:29,
+    talle:"m"
+}
+]
 let mtbVerde = (200000)
 let mtbAzul = (300000)
 let rutaBlanca = (120000)
