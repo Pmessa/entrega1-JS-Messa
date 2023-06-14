@@ -51,7 +51,7 @@ switch (itemSeleccionado) {
                 alert(`LSa opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         }
-        alert(`Gracias por su compra ☺`)
+        alert(`Gracias por utilizar nuesta App ☺`)
         break
 
     case 2:
@@ -87,7 +87,7 @@ switch (itemSeleccionado) {
                 alert(`la opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         }
-        alert(`Gracias por su compra ☺`)
+        alert(`Gracias por utilizar nuesta App ☺`)
         break
     case 3:
         alert(`Gracias por utilizar nuestro simulador de compras ☺
