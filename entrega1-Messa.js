@@ -30,28 +30,30 @@ switch (itemSeleccionado) {
             } else if (formaDePago == 2) {
                 alert(`Enviaremos su Specialized MTB en solo 12 cuoatas de  de U$D` + mtbSpecialized / 12)
             } else if (formaDePago >= 3 || isNaN) {
-                alert(`la opción ` + formaDePago + ` ingresada, no es una opción válida`)
+                alert(`La opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         } else if (mtb == 2) {
             pago()
             if (formaDePago == 1) {
-                alert(`Enviaremos su Specialized MTB cuando recibamos el depósito de U$D ` + mtbMerida * .9)
+                alert(`Enviaremos su Merida MTB cuando recibamos el depósito de U$D ` + mtbMerida * .9)
             } else if (formaDePago == 2) {
-                alert(`Enviaremos su Specialized MTB en solo 12 cuoatas de  de U$D` + mtbMerida / 12)
+                alert(`Enviaremos su Merida MTB en solo 12 cuoatas de  de U$D` + mtbMerida / 12)
             } else if (formaDePago >= 3 || isNaN) {
-                alert(`la opción ` + formaDePago + ` ingresada, no es una opción válida`)
+                alert(`La opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         } else if (mtb == 3) {
             pago()
             if (formaDePago == 1) {
-                alert(`Enviaremos su Specialized MTB cuando recibamos el depósito de U$D ` + mtbScott * .9)
+                alert(`Enviaremos su Scott MTB cuando recibamos el depósito de U$D ` + mtbScott * .9)
             } else if (formaDePago == 2) {
-                alert(`Enviaremos su Specialized MTB en solo 12 cuoatas de  de U$D` + mtbScott / 12)
+                alert(`Enviaremos su Scott MTB en solo 12 cuoatas de  de U$D` + mtbScott / 12)
             } else if (formaDePago >= 3 || isNaN) {
-                alert(`la opción ` + formaDePago + ` ingresada, no es una opción válida`)
+                alert(`LSa opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         }
+        alert(`Gracias por su compra ☺`)
         break
+
     case 2:
         console.log(`Usted ha seleccionado Bicicletas RUTA`)
         let ruta = prompt(`seleccione la marca de su bici de RUTA:
@@ -61,40 +63,40 @@ switch (itemSeleccionado) {
         if (ruta == 1) {
             pago()
             if (formaDePago == 1) {
-                alert(`Enviaremos su Specialized MTB cuando recibamos el depósito de U$D ` + rutaSpecialized * .9)
+                alert(`Enviaremos su Specialized RUTA cuando recibamos el depósito de U$D ` + rutaSpecialized * .9)
             } else if (formaDePago == 2) {
-                alert(`Enviaremos su Specialized MTB en solo 12 cuoatas de  de U$D` + rutaSpecialized / 12)
+                alert(`Enviaremos su Specialized RUTA en solo 12 cuoatas de  de U$D` + rutaSpecialized / 12)
             } else if (formaDePago >= 3 || isNaN) {
                 alert(`la opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         } else if (ruta == 2) {
             pago()
             if (formaDePago == 1) {
-                alert(`Enviaremos su Specialized MTB cuando recibamos el depósito de U$D ` + rutaMerida * .9)
+                alert(`Enviaremos su Merida RUTA cuando recibamos el depósito de U$D ` + rutaMerida * .9)
             } else if (formaDePago == 2) {
-                alert(`Enviaremos su Specialized MTB en solo 12 cuoatas de  de U$D` + rutaMerida / 12)
+                alert(`Enviaremos su Merida RUTA en solo 12 cuoatas de  de U$D` + rutaMerida / 12)
+
             }
         } else if (ruta == 3) {
             pago()
             if (formaDePago == 1) {
-                alert(`Enviaremos su Specialized MTB cuando recibamos el depósito de U$D ` + rutaScott * .9)
+                alert(`Enviaremos su Scott RUTA cuando recibamos el depósito de U$D ` + rutaScott * .9)
             } else if (formaDePago == 2) {
-                alert(`Enviaremos su Specialized MTB en solo 12 cuoatas de  de U$D` + rutaScott / 12)
+                alert(`Enviaremos su Scott RUTA en solo 12 cuoatas de  de U$D` + rutaScott / 12)
             } else if (formaDePago >= 3 || isNaN) {
                 alert(`la opción ` + formaDePago + ` ingresada, no es una opción válida`)
             }
         }
-
+        alert(`Gracias por su compra ☺`)
         break
     case 3:
-        alert(`Gracias por utilizar nuestro simulador de compras
+        alert(`Gracias por utilizar nuestro simulador de compras ☺
         para volver al menú inicial presione la tecla "F5"`)
         console.log(`Presione la tecla "F5" para volver a ver el menú`)
         break
     default:
         alert(`La opción ingresada no es correcta presione "F5" para volver al menú principal`)
-
-        console.log(`La opcion no es correcta, Gracias por utilizar nuestra app, presione la tecla "F5" para volver a ver el menú`)
+        console.log(`La opcion no es correcta, Gracias por utilizar nuestra app ☺, presione la tecla "F5" para volver a ver el menú`)
         break
 }
 
